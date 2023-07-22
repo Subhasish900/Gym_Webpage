@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+body {
+    display: block;
+    margin: 8px;
+}
+.home{
+	height: 720px;
+	width: 100%;
+	background: url(cover.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 2rem;
+}
+.logo{
+	font-size: 40px;
+	font-weight: 600;
+	color: #fff;
+}
+span{
+	color: red;
+}
+ul{
+	list-style: none;
+	display: flex;
+    align-items: center;
+}
+.manu{
+	background-color: red;
+	height: 90px;
+	width: 600px;
+	border-radius: 10% 6% 10% 11% / 0% 0% 67% 72%;
+	justify-content: space-around;
+	align-items: center;
+}
+.active {
+    font-weight: 900px;
+}
+a{  
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+}
+ul li a:hover{
+	color:black;
+	cursor: pointer;
+}
+.button{
+	background-color: red;
+	color: white;
+	border: 1px solid red;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	height: 40px;
+	text-align: center;
+	margin:auto;
+	width: 200px;
+	transition: all 0.4s ease;
+}
+.button h2{
+	margin-top: 5px;
+	font-size: 20px;
+}
+.button:hover{
+	cursor: pointer;
+	color: red;
+	background: transparent;
+	border-color: red;
+}
+.intro{
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 20%;
+}
+.get-into{
+	margin-top: 14%;
+	display: flex;
+	justify-content: center;
+}
+.get-into h3 {
+    padding: 0.8rem 2rem;
+    background:red;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.shape{
+	color: white;
+	font-size: 120px;
+	text-align: center;
+	font-weight: 900;
+}
+.days{
+	text-align: center;
+	font-size: 40px;
+	color: red;
+}
+.home-footer{
+	width: 100%;
+	height: 150px;
+	position: absolute;
+}
+.home-footer:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 86%;
+    background: red;
+    clip-path: polygon(100% 0, 100% 100%, 53% 100%, 0 100%, 0 0, 50% 60%);
+    opacity: .8;
+}
+.home-footer-manu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0 2rem;
+	z-index: 1;
+	height: 50px;
+}
+.btn{
+	border-left: 16px;
+	width: 90px;
+    height: 50px;
+    background-color:black;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    margin-top: 25px;
+}
+.text-footer{
+	text-align: center;
+	color: red;
+	font-size: 35px;
+	padding-bottom: 12px;
+	margin-left: 33%
+}
+strong{
+	color: white;
+}
+ul{
+	display: inline-flex;
+}
+.social li{
+	padding: 9px;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	margin-right: 10px
+}
+.social li a{
+	color: white;
+	border:1px solid transparent;
+	border-radius: 50%;
+	position: absolute;
+
+}
+.social li a:hover{
+	color: white;
+
+}
+.option{
+	background: #353b48;
+	height:100%;
+	width: 100%;
+}
+.option-intro{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+
+}
+.h3-colour{
+	color: red;
+	margin-top: 30px;
+}
+.h2-colour{
+	color: white;
+	margin-top: 10px;
+}
+.option-service{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 4rem 3rem;
+    gap:3rem;
+}
+.service-card {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 260px;
+    justify-content: space-around;
+    background: #fff;
+    transition: .3s;
+}
+.icon-bg-lightdark{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    color: red;
+ }
+ .fa-solid, .fas {
+    font-weight: 900;
+}
+.service-card h3 {
+    font-size: 22px;
+}
+.service-card p{
+    width: 100%;
+    text-align: justify;
+    opacity: .7;
+    font-size: 14px;
+    line-height: 20px;
+}
+.service-card .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    color: red;
+}
+.class{
+ background: #222f3e;
+}
+.class-intro{
+	display: flex;
+	text-transform: uppercase;
+	text-align: center;
+	flex-direction: column;
+}
+.our-class{
+	color: red;
+	margin-top: 50px;
+	font-size: 30px;
+}
+.offer{
+	color: white;
+	margin-top: 20px;
+	font-size: 30px;
+}
+.class-offer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 4rem 3rem;
+    gap: 3rem;
+}
+.offer-card {
+    height: 300px;
+    background: #353b48;
+    padding-bottom: 1rem;
+}
+.offer-card img {
+    height: 80%;
+    width: 100%;
+}
+.offer-title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.appoint{
+    height: 500px;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    background: url(appoint.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: 1px;
+}
+.btn-appoint{
+	background: red;
+	color: white;
+	border-radius: 5px;
+	height: 40px;
+	width: 200px;
+	text-align: center;
+	transition: all 0.3s ease;
+	border-color: red;
+	margin-top: 4px;
+}
+.btn-appoint:hover{
+	border-color: red;
+	background: transparent;
+	color: red;
+    cursor: pointer;
+}
+.plans{
+	background-color: #222f3e;
+}
+.section-intro{
+	display: flex;
+	text-transform: uppercase;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 30px;
+}
+.h2-section-intro{
+	color: red;
+	font-size: 30px;
+}
+.span-section-intro{
+	color: white;
+	font-size:25px;
+	padding-top: 15px;
+}
+.price{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 0;
+}
+.price-card {
+    width: 290px;
+    height: 300px;
+    border: 1px solid #576574;
+    transition: 0.3s;
+    padding: 2rem 0;
+    text-align: center;
+    column-gap: 4px;
+}
+.price-card:hover{
+	background:#fe2c54;
+	color: white;
+}
+.col {
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+
+}
+.details{
+	margin:2rem 0;
+	display: block;
+	color: white;
+	text-align: center;
+	font-size: 20px; 
+}
+.enroll-btn{
+	background: red;
+	color: white;
+	width: 35px;
+	height: 20px;
+	font-size: 30px;
+	transition:0.2s;
+}
+.enroll-btn:hover{
+	background: #222f3e;
+	color: #fe2c54;
+}
+.trainer{
+	background: #353b48;
+}
+.trainer-intro{
+	display: flex;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 30px;
+	flex-direction: column;
+}
+.h3-trainer{
+	color: red;
+	font-size: 30px;
+}
+.span-trainer{
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+}
+.team-trainer {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.trainer-card{
+	width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid red;
+}
+.team1{
+	height: 100%;
+	width: 100%;
+}
+.trainer1{
+	position: absolute;
+	color: white;
+}
+.team2{
+	height: 100%;
+	width: 100%;
+}
+.team3{
+	height: 100%;
+	width: 100%;
+}
+.contact-us{
+	background: #222f3e;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+.contact-us .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us .item .icon {
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 1rem;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #353b48;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 18px;
+    background: red;
+}
